@@ -1,16 +1,16 @@
 <template>
   <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
     <el-form-item label="用户名" prop="name">
-      <el-input type="text" v-model="ruleForm.name" autocomplete="off"></el-input>
+      <el-input style="width:20%" type="text" v-model="ruleForm.name" autocomplete="off"></el-input>
     </el-form-item>
     <el-form-item label="密码" prop="pass">
-      <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
+      <el-input style="width:20%" type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
     </el-form-item>
     <el-form-item label="确认密码" prop="checkPass">
-      <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off"></el-input>
+      <el-input style="width:20%" type="password" v-model="ruleForm.checkPass" autocomplete="off"></el-input>
     </el-form-item>
     <el-form-item label="年龄" prop="age">
-      <el-input v-model.number="ruleForm.age"></el-input>
+      <el-input style="width:20%" v-model.number="ruleForm.age"></el-input>
     </el-form-item>
     <el-form-item>
       <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
@@ -117,6 +117,3 @@ export default {
   }
 }
 </script>
-<style>
-
-</style>
